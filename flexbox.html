@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+
+    <style>
+        .container{
+            height: 500px;
+            display: flex;
+            border: 2px dotted seagreen;
+            justify-content: center; 
+            /* sob content center e chole ashbe */
+            /* justify-content:space-evenly; */
+            /* justify-content:space-between; */
+            /* justify-content:space-around; */ 
+
+            /* align-items: flex-end; */
+              /* > div er nichy theke shuru hobe */
+            /* align-items: center;  */
+            /* > div er mmoddhy virtically center e chole ashbe mane upor nich milaye ekdom majhKhan e chole ashbe */
+            
+
+        }
+        .box{
+            width: 200px;
+            /* height: 200px; */
+            border: 3px dashed rebeccapurple;
+            font-size: 3rem;
+        }
+        #box-5{
+            flex-grow: 1;
+            order: 2;
+        }
+        /* flex-grow diye side menubar er kaj easily kora jay, order diye div er order change kora jay, */
+        #box-6{
+        order: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is FlexBox</h1>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+    </div>
+    <h1 style="color: red;">This is another FlexBox</h1>
+    <div class="container">
+        <div class="box" id="box-5" >box-5 <p>menubar</p></div>
+        <div class="box" id="box-6" >box-6</div>
+
+    </div>
+
+    
+</body>
+</html>
